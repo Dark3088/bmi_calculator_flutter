@@ -1,9 +1,5 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
-
-const displayedTextStyle = TextStyle(
-  fontSize: 18,
-  color: Color(0xff8D8E98),
-);
 
 class CardBasicInfo extends StatelessWidget {
   CardBasicInfo({
@@ -21,7 +17,7 @@ class CardBasicInfo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Icon(size: 72, awesomeIcon),
-        Text(displayedText, style: displayedTextStyle)
+        Text(displayedText, style: kLabelTextStyle)
       ],
     );
   }
